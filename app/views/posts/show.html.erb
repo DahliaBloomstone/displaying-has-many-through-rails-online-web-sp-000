@@ -7,3 +7,8 @@ Comments:
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
+
+
+<!--In our Post#show page, we'll display the title and content information for the post as well as the information for each comment associated with the post.
+comment.user returns the User object associated with that comment
+can call any method that our user responds to, ie username
